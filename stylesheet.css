@@ -1,0 +1,35 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    padding:40px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.galeria{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+    grid-auto-rows: 200px;
+}
+.card{
+    padding:30px;
+    border-radius: 10px;
+    border:2px solid black;
+}
+@media (max-width:600px){
+    .galeria{
+ grid-template-columns: repeat(1,1fr);
+    }
+}
+.card1{
+    grid-column:span 2;
+}
+.card4{
+    grid-row: span 2;
+}

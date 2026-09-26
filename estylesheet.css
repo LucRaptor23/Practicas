@@ -1,0 +1,46 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 300px 100px;
+   height: 100vh;
+    grid-template-areas: 
+    "header header"
+    "menu main"
+    "footer footer";
+}
+header{
+    grid-area:header;
+    background: blue;
+    border:2px solid black;
+    border-radius: 5px;
+    text-align: center;
+
+}
+nav{
+    grid-area:menu;
+    background: green;
+    border:2px solid black;
+    border-radius: 5px;
+    text-align: center;
+
+
+}
+main{
+    grid-area: main;
+    background: red;
+    border:2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    text-align: center;
+
+
+}
+footer{
+    grid-area:footer;
+    background: pink;
+    border:2px solid black;
+    border-radius: 5px;
+    text-align: center;
+
+
+}
